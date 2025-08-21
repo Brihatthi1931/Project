@@ -8,5 +8,5 @@ def client():
 
 def test_hello(client):
     response = client.get('/')
-    assert response.data == b"Hello World from Flask app!"
+    assert response.data == b"Hello World from Brihatthi!"
     assert response.status_code == 200

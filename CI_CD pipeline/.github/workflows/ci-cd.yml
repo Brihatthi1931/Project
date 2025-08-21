@@ -34,13 +34,13 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
       with:
-        context: .
+        context: ./CI_CD pipeline
         push: true
         tags: brihatthi/ubuntu-latest:latest
+
 
     - name: Run tests in container
       run: |
         docker run --rm brihatthi/ubuntu-latest:latest pytest test_app.py
     - name: List files for debugging
-      run: ls -R
-
+      run: ls -lR
