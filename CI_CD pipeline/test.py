@@ -1,4 +1,4 @@
-import pytest # pyright: ignore[reportMissingImports]
+import pytest
 from app import app
 
 @pytest.fixture
